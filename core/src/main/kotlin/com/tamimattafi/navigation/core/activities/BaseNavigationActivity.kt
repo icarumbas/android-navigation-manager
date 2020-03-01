@@ -70,7 +70,7 @@ abstract class BaseNavigationActivity<F: BaseNavigationFragment> : AppCompatActi
         Log.d(TAG, VIEW_CREATED_MESSAGE)
     }
 
-    final override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         onActivityLaunched()
         super.onCreate(savedInstanceState)
         onActivityCreated()
